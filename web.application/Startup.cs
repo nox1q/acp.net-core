@@ -22,10 +22,11 @@ namespace web.application
             {
                 app.UseDeveloperExceptionPage();
             }
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                    name: "deafult",
+                    name: "default",
                     template: "{controller=Hello}/{action=Index}/{id?}");
             });
 
